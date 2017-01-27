@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.english.a1100words_you_need_to_know.a1100wordsyouneedtoknow.exercise_screen.screens.exercise_screens.ImageDefinitionMultiChoiceFragment">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:enabled="false"
+        android:gravity="center"
+        android:id="@+id/check_next"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Check" />
+
+
+
+    <FrameLayout
+        android:layout_below="@id/img"
+        android:layout_above="@id/check_next"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <view.multi_choice_view.MultiChoiceView
+            android:id="@+id/multi_choice_view"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+
+</RelativeLayout>

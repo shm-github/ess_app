@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.english.a1100words_you_need_to_know.a1100wordsyouneedtoknow">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".splash_screen.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".weeks_list.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b3d17eb62011bc556b4a9dad274d7fab0a53bb4a" />
+
+        <activity android:name=".days_list.DaysListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".exercise_screen.screens.ExerciseActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

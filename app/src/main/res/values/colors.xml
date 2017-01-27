@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorGreen">#55a20d</color>
+    <color name="md_lime_transparent">#58e6ef9b</color>
+    <color name="md_green_300_transparent">#6f38ce3f</color>
+    <color name="md_red_transparent">#6cf56868</color>
+</resources>

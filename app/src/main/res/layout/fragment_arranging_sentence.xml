@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.english.a1100words_you_need_to_know.a1100wordsyouneedtoknow.exercise_screen.screens.exercise_screens.ArrangingSentenceFragment">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:background="@drawable/wood_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:enabled="false"
+        android:gravity="center"
+        android:id="@+id/check_next"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Check" />
+
+
+    <FrameLayout
+        android:id="@+id/lll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:background="@color/md_green_300_transparent"
+        android:minHeight="200dp">
+
+        <view.arranging_sentence.ArrangingSentenceView
+            android:gravity="left"
+            android:orientation="vertical"
+            android:id="@+id/arrange_sentence_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_above="@id/check_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lll"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/md_lime_transparent"
+        android:minHeight="200dp">
+
+        <view.arranging_sentence.ArrangingSentenceView
+            android:gravity="left"
+            android:orientation="vertical"
+            android:id="@+id/not_arrange_sentence_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+
+</RelativeLayout>

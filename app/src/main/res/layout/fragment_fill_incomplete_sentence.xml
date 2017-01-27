@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.english.a1100words_you_need_to_know.a1100wordsyouneedtoknow.exercise_screen.screens.exercise_screens.FillIncompleteSentenceFragment">
+
+
+    <TextView
+        android:padding="16dp"
+        android:gravity="center"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        style="@style/TitleStyle"
+        android:background="@color/md_lime_50"
+        android:layout_alignParentTop="true"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:enabled="false"
+        android:gravity="center"
+        android:id="@+id/check_next"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="Check" />
+
+
+    <view.keyboard.CustomKeyboard
+        android:id="@+id/custom_key_board"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/check_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <view.keyboard.BlankTextView
+        android:layout_above="@id/custom_key_board"
+        android:layout_margin="20dp"
+        android:id="@+id/blank_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+
+
+</RelativeLayout>

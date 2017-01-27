@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/1100wordsyouneedtoknow.iml" filepath="$PROJECT_DIR$/1100wordsyouneedtoknow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/antennaPod/antennaPod.iml" filepath="$PROJECT_DIR$/antennaPod/antennaPod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circularProgrssLibrary/circularProgrssLibrary.iml" filepath="$PROJECT_DIR$/circularProgrssLibrary/circularProgrssLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/greendaogenaroator/greendaogenaroator.iml" filepath="$PROJECT_DIR$/greendaogenaroator/greendaogenaroator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infinitecycleviewpager/infinitecycleviewpager.iml" filepath="$PROJECT_DIR$/infinitecycleviewpager/infinitecycleviewpager.iml" />
+    </modules>
+  </component>
+</project>

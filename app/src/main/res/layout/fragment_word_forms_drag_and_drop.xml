@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.english.a1100words_you_need_to_know.a1100wordsyouneedtoknow.exercise_screen.screens.exercise_screens.WordFormsDragAndDropFragment">
+
+    <Button
+        android:id="@+id/check_next"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="Check"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/check_next"
+        android:layout_centerInParent="true">
+
+        <view.drag_drop_view.DragAndDropView
+            android:id="@+id/drag_drop_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" />
+
+        <view.drag_drop_view.FalseHolderView
+            android:padding="5dp"
+            android:id="@+id/false_holder_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/single_choice_bg_selector"
+            android:minHeight="100dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

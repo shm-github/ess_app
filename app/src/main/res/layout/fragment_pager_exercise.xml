@@ -1,0 +1,51 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.english.a1100words_you_need_to_know.a1100wordsyouneedtoknow.exercise_screen.screens.ExercisePagerFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.daimajia.numberprogressbar.NumberProgressBar
+            android:layout_marginTop="5dp"
+
+            android:id="@+id/numberProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="center_horizontal"
+
+            custom:progress_reached_bar_height="10dp"
+            custom:progress_reached_color="#34db55"
+
+            custom:progress_text_color="#3498DB"
+            custom:progress_text_offset="1dp"
+
+            custom:progress_text_size="10sp"
+            custom:progress_text_visibility="visible"
+            custom:progress_unreached_bar_height="0.75dp"
+            custom:progress_unreached_color="#3f86c0" />
+
+        <view.NonScrollableViewPager
+            android:id="@+id/exercise_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+    </LinearLayout>
+
+   <view.FloatingFlag
+       android:visibility="gone"
+       android:id="@+id/flag"
+       android:layout_gravity="center_vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"/>
+
+</FrameLayout>
